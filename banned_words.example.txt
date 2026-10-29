@@ -1,0 +1,5 @@
+# Copy this file to banned_words.txt and list your real words there (that file is never committed).
+# Words that must never reach a cloud AI. One per line, case-insensitive.
+# Add customer names, plant codes, supplier names as you find them.
+ACME
+Acme Corp

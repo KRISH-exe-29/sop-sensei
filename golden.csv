@@ -1,0 +1,18 @@
+question,doc,step,value,lang
+what voltage for core to frame megger test,WI-KCA-01,20,2500,en
+how long should core pad insulation be kept in the oven,WI-KCA-01,3,12,en
+what is the tolerance for total stack height,WI-KCA-01,12,±2,en
+how much overlap for polyglass tape wrapping,P-KCA-005,4,50,en
+what width of polyester strap is used for strapping the core,WI-KCA-01,18,19,en
+at what distance should the polyglass tape be marked,P-KCA-005,2,150,en
+which spirit level is used to check frame level,WI-KCA-01,6,1 meter,en
+which checklist must be filled during core assembly,WI-KCA-01,24,F-KCA-007,en
+where is the densified wood ring placed,WI-KCA-01,23,three limbs,en
+which tool is used to tighten the polyglass belt,P-KCA-005,5,allen,en
+core-க்கு megger test எத்தனை volt கொடுக்க வேண்டும்?,WI-KCA-01,20,2500,ta
+core pad insulation-ஐ oven-ல் எவ்வளவு நேரம் வைக்க வேண்டும்?,WI-KCA-01,3,12,ta
+core strapping के लिए polyester strap की width कितनी है?,WI-KCA-01,18,19,hi
+core और frame के बीच megger test कितने volt पर करते हैं?,WI-KCA-01,20,2500,hi
+what vacuum level is needed for oil filling,,,,en
+what is the step lap pattern for stacking core laminations,,,,en
+how to measure HV winding resistance,,,,en

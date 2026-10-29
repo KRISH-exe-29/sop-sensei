@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+~$*
+# Unsanitized originals and the real banned list stay on this PC only
+Resources/WI_&_Methods_Original/
+banned_words.txt

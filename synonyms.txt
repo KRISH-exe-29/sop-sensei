@@ -1,0 +1,11 @@
+# main word = variants (typos in SOPs, local words people type)
+# The search treats every variant as the main word.
+megger = meggar, megar, meger
+insulation = insolation, insulaton
+fixture = fixtore, fixure
+building = boilding
+outer = ooter
+through = throogh
+annexure = annexture, annex
+polyglass = poly-glass
+percent = percentage
