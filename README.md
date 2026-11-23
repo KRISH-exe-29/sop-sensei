@@ -1,11 +1,34 @@
 # SOP Sensei
 
-Ask the shop floor's SOPs a question, get the exact answer with its source.
+Transformer core-shop staff ask the plant's SOPs a question and get the exact answer, with the document, step and photo it came from.
 
-SOP Sensei answers questions from transformer core-shop staff using **only** the plant's SOPs
-(work instructions and method sheets). Every answer cites its document and step
-(e.g. `[WI-KCA-01 Step 20]`), shows the matching photo, and works in English, Tamil and Hindi.
-If the SOPs don't cover it, it says so instead of guessing.
+- Answers come **only** from the plant's SOPs (work instructions and method sheets), and every answer cites its source, e.g. `[WI-KCA-01 Step 20]`.
+- Shows the photo for the matching step.
+- Takes questions in English, Tamil or Hindi.
+- Says "Not covered in the SOPs, ask your supervisor" instead of guessing, and warns about any number that isn't in the SOP text.
+- Runs on a local model by default, so nothing leaves the PC.
+
+## Quick start
+
+```bash
+pip install python-docx pywin32 && ollama pull gemma3:4b
+python sop_reader.py Resources                                 # build the index from the SOPs
+python answer.py "what voltage for core to frame megger test"  # ask a question
+```
+
+Search alone works with no AI model at all. This is real output from the sample SOPs:
+
+```
+$ python search.py "stack height tolerance"
+  [ 9.06] WI-KCA-01 Step 12 (rev ?)
+          Step 12: Stack completion. How: After completing all the stacks check the core
+          circumference & measure the total stack height with OD calipers and note down in the check list. ...
+          image: index/images/WI-KCA-01/step12_1.jpeg
+  [ 8.51] WI-KCA-02 Step 12 (rev ?)
+          Step 12: Continuation of first stack. How: as per the required stack height. Ensure that
+          there are no air gaps in joints. Air gap tolerance should be less than 1 mm. ...
+          image: index/images/WI-KCA-02/step12_1.jpeg
+```
 
 ## How it works
 
